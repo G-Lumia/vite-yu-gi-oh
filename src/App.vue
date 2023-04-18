@@ -34,10 +34,17 @@
             });
         },
         changeList(){
-            const url = archetypes.changeUrl + archetypes.archetypeSearch;
+            if(archetypes.archetypeSearch != "none")
+            {
+                var url = archetypes.changeUrl + archetypes.archetypeSearch;
+            }
+            else
+            {
+                var url = store.baseUrl + store.endpoint;
+            }
             axios.get(url).then((res) => {
                 store.cardList = res.data;
-            });
+        });
         }
         },
     mounted() {

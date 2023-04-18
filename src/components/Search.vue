@@ -2,6 +2,7 @@
     
     <section class="d-flex justify-content-center">
         <select name="archetypes" id="archetypes" v-model="archetypes.archetypeSearch" @select="$emit('change')">
+            <option value="none"> </option>
             <option v-for="(archetype , index) in archetypes.archetypesList" :value="archetype.archetype_name" :key="index">
                 {{ archetype.archetype_name }}
             </option>

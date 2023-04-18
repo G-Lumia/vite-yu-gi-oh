@@ -5,5 +5,5 @@ export const archetypes = reactive({
     baseUrl: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
     changeUrl:'https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=',
     endpoint: '',
-    archetypeSearch: ''
+    archetypeSearch: 'none'
 })
