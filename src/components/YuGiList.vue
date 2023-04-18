@@ -1,7 +1,7 @@
 <template>
-    <section>
-        <div class="row">
-            <YuGiCard v-for="(card , index) in store.cardList" :key="index" :card="card" />
+    <section class="d-flex justify-content-center">
+        <div class="container row">
+            <YuGiCard v-for="(card , index) in store.cardList.data" :key="index" :card="card" />
         </div>
     </section>
 </template>
@@ -26,6 +26,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
-}
 </style>
